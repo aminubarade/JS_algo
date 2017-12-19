@@ -24,7 +24,7 @@ function sumRecur(arr) {
 		return arr[0];
 	}
 	else{
-		sum = arr.shift() + sumRecur(arr);
+		let sum = arr.shift() + sumRecur(arr);
 		return sum;
 	}
 }
