@@ -19,6 +19,12 @@ function sumarrw(arr) {
 }
 
 //third function
-function sumRecur (num) {
-	
+function sumRecur(arr) {
+	if(arr.length == 1){
+		return arr[0];
+	}
+	else{
+		sum = arr.shift() + sumRecur(arr);
+		return sum;
+	}
 }
